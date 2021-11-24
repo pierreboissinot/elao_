@@ -20,7 +20,7 @@ Les stratégies de SEO et d'accessibilité doivent être établis en amont du pr
 Ces optimisations passent par une navigation claire et simple, un temps de chargement rapide, une hiérarchisation des contenus, des titres de pages éloquents et enfin du contenu alternatif lorsque le media ne contient pas de texte. Bien évidemment, **ces exemples ne sont pas exhaustifs**, une mise en place de stratégie d'accessibilité et / ou de SEO dépend des objectifs et du budget alloué, et nécessite une mise en oeuvre complète. 
 
 ## Accesseo, comment ça marche ?
-Acesseo permet de remonter, à partir du HTML, ces signaux que l'on peut, si on le souhaite, optimiser - ou non, selon notre stratégie. Ce bundle s'adresse aux utilisateurs de [Symfony](/glossaire/symfony), au moment du développement : webmasters, développeurs ou intégrateurs. Les informations sont visibles sur la Symfony Debug toolbar et dans le profiler dans leur intégralité.
+Accesseo permet de remonter, à partir du HTML, ces signaux que l'on peut, si on le souhaite, optimiser - ou non, selon notre stratégie. Ce bundle s'adresse aux utilisateurs de [Symfony](./symfony.md), au moment du développement : webmasters, développeurs ou intégrateurs. Les informations sont visibles dans la Symfony Debug toolbar et dans le profiler dans leur intégralité.
 
 ### Quelques exemples :
 
