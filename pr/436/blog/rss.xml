@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+    <channel>
+        <title>Le blog de l'équipe d'Elao</title>
+        <description>Découvrez nos articles techniques (ou non), rédigés par les membres de l'équipe d'Elao !</description>
+        <copyright>Elao - L’utilisation des flux RSS de elao.com est réservée à un usage strictement personnel, non professionnel et non collectif. Toute autre exploitation doit faire l’objet d’une autorisation et donner lieu au versement d’une rémunération. Contact : contact@elao.com</copyright>
+        <link>https://elao.github.io/elao_/pr/436/blog</link>
+        <pubDate>Wed, 24 Nov 2021 14:18:24 +0000</pubDate>
+        <language>fr</language>
+        <image>
+            <url>https://elao.github.io/elao_/pr/436/apple-touch-icon.png</url>
+            <title>Le blog de l'équipe d'Elao</title>
+            <link>https://elao.github.io/elao_/pr/436/blog</link>
+        </image>
+        <atom:link href="https://elao.github.io/elao_/pr/436/blog/rss.xml" rel="self" type="application/rss+xml"/>
+                <item>
+            <title>Sabrina, alternante en intégration fraîchement arrivée dans l&#039;équipe ✨</title>
+            <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[  ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/sabrina-alternante-en-integration</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/elao/sabrina-alternante-en-integration</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/thumbnails/sabrina-ludo-samoens.jpg/8210381e5e1861c217565dcd98ae6172.jpg" width="1200" height="627">
+                <media:description type="plain">Sabrina, alternante en intégration fraîchement arrivée dans l&#039;équipe ✨</media:description>
+                            </media:content>
+                            <category>elao</category>
+                            <category>team</category>
+                                        <comments>https://twitter.com/Elao/status/1440962443228889090</comments>
+                    </item>
+                <item>
+            <title>Gérer des projets… sans chef·fe de projet</title>
+            <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[ Nous avons construit plus de 200 applications en nous appuyant essentiellement sur notre équipe technique. Comment ? ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/methodo/gestion-de-projet-sans-chef-de-projet</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/methodo/gestion-de-projet-sans-chef-de-projet</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/headers/whiteboard-product-roadmap.jpg/cacc8f7bb0dd722cd6ab11ab589746b3.jpg" width="1200" height="627">
+                <media:description type="plain">Gérer des projets… sans chef·fe de projet</media:description>
+                                    <media:credit role="photographer" scheme="urn:ebu">slidebean, https://unsplash.com/@slidebean</media:credit>
+                            </media:content>
+                            <category>organisation-agile</category>
+                            <category>gestion-de-projet</category>
+                                        <comments>https://twitter.com/Elao/status/1435891278315671554</comments>
+                    </item>
+                <item>
+            <title>Maxime, développeur web chez Elao depuis 10 ans</title>
+            <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[  ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/maxime-developpeur-web-depuis-10-ans</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/elao/maxime-developpeur-web-depuis-10-ans</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/2021/itw-max.jpeg/9b73800543a7778167748cba2d343081.jpeg" width="1200" height="627">
+                <media:description type="plain">Maxime, développeur web chez Elao depuis 10 ans</media:description>
+                            </media:content>
+                            <category>elao</category>
+                            <category>team</category>
+                                        <comments>https://twitter.com/Elao/status/1427551760139366403</comments>
+                    </item>
+                <item>
+            <title>Anne-Laure, développeuse web chez Elao depuis 3 ans</title>
+            <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[  ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/anne-laure-developpeuse-web-chez-elao-depuis-3-ans</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/elao/anne-laure-developpeuse-web-chez-elao-depuis-3-ans</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/2021/itw-2b.jpeg/7e89183e052bd681eb2037f078390bfc.jpeg" width="1200" height="627">
+                <media:description type="plain">Anne-Laure, développeuse web chez Elao depuis 3 ans</media:description>
+                            </media:content>
+                            <category>elao</category>
+                            <category>team</category>
+                                        <comments>https://twitter.com/Elao/status/1413061065374580737</comments>
+                    </item>
+                <item>
+            <title>Les attributs PHP 8 dans Symfony</title>
+            <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[ Utilisation des attributs PHP 8 à la place des annotations. ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/dev/les-attributs-php-8-dans-symfony</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/dev/les-attributs-php-8-dans-symfony</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/thumbnails/les-attributs-php-8-dans-symfony.jpg/11e22b77583b9f846381143cc937e645.jpg" width="1200" height="627">
+                <media:description type="plain">Les attributs PHP 8 dans Symfony</media:description>
+                            </media:content>
+                            <category>symfony</category>
+                            <category>php</category>
+                            <category>attributes</category>
+                                        <comments>https://twitter.com/Elao/status/1412341801734791169</comments>
+                    </item>
+                <item>
+            <title>[Prénom], [poste] chez Elao depuis X ans</title>
+            <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[ petite phrase sympa sur la personne ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/trame-itw</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/elao/trame-itw</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/images/posts/thumbnails/trame-itw.jpg" width="1200" height="627">
+                <media:description type="plain">[Prénom], [poste] chez Elao depuis X ans</media:description>
+                            </media:content>
+                            <category>elao</category>
+                            <category>team</category>
+                                </item>
+                <item>
+            <title>AFUP Day 2021, jour 2 : le compte-rendu de l&#039;équipe</title>
+            <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[ Notre compte-rendu du deuxième jour de l&#039;Afup Day, édition 2021, à distance ! ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/afup-day-2-2021</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/elao/afup-day-2-2021</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/2021/afup-day-2021/afup-day-2021-2.png/700f32dfc4b74c81e72194eef2f79745.png" width="1200" height="627">
+                <media:description type="plain">AFUP Day 2021, jour 2 : le compte-rendu de l&#039;équipe</media:description>
+                            </media:content>
+                            <category>developpement</category>
+                            <category>afup</category>
+                            <category>conference</category>
+                            <category>afupday</category>
+                                </item>
+                <item>
+            <title>AFUP Day 2021, jour 1 : le compte-rendu de l&#039;équipe</title>
+            <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[ Notre compte-rendu du premier jour de l&#039;Afup Day, édition 2021, à distance ! ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/afup-day-1-2021</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/elao/afup-day-1-2021</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/2021/afup-day-2021/afup-day-2021.png/951d7b907ffee359028f2348efb15d70.png" width="1200" height="627">
+                <media:description type="plain">AFUP Day 2021, jour 1 : le compte-rendu de l&#039;équipe</media:description>
+                            </media:content>
+                            <category>developpement</category>
+                            <category>afup</category>
+                            <category>conference</category>
+                            <category>afupday</category>
+                                </item>
+                <item>
+            <title>MiXiT 2021, une conférence 100 % en ligne: retour d&#039;expérience côté organisation</title>
+            <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[ Comme la plupart des conférences tech, cette année, l&#039;édition de MiXiT 2021 a eu lieu à distance. Alors, comment ça s&#039;est passé côté orga ? ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/rex-orga-mixit-2021</guid>
+            <link>https://elao.github.io/elao_/pr/436/blog/elao/rex-orga-mixit-2021</link>
+            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/2021/mixit/mixit-2021.png/45b91cc4e16bf18c56d27b64e513f342.png" width="1200" height="627">
+                <media:description type="plain">MiXiT 2021, une conférence 100 % en ligne: retour d&#039;expérience côté organisation</media:description>
+                            </media:content>
+                            <category>conference</category>
+                            <category>mixit</category>
+                                        <comments>https://twitter.com/Elao/status/1397886962527309826</comments>
+                    </item>
+            </channel>
+</rss>
