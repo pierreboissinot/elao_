@@ -1,5 +1,4 @@
 ---
-type:               "post"
 title:              "Elao au Forum PHP pour parler accessibilité et SEO !"
 date:               "2021-11-25"
 lastModified:       ~
