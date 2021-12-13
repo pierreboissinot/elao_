@@ -31,7 +31,6 @@ Accesseo permet de remonter, à partir du HTML, ces signaux que l'on peut, si on
 ![Informations accessibilité dans le profiler : insights](/images/accesseo/accesseo-seo.png)
 
 
-
 ## En savoir plus sur la qualité web : 
 
 - [Check-list Qualité web](https://checklists.opquast.com/fr/assurance-qualite-web/)
