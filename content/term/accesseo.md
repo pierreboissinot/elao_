@@ -9,7 +9,7 @@ articles:
 - "dev/donnees-structurees-offre-emploi"
 - "dev/no-index-staging-symfony"
 ---
-Chez Elao, lorsque nous travaillons sur des pages web, **nous cherchons à offrir la meilleure expérience possible à l'utilisateur**. Cela passe par un travail d'UX design et de conception au préalable, mais également d'optimisation invisibles du HTML qui permettent un meilleur accès au contenu, quelque soit les conditions de lecture de la page (débit internet faible, port d'équipements contraignants comme des gants, lecture d'écran, etc.). 
+Chez Elao, lorsque nous travaillons sur des pages web, **nous cherchons à offrir la meilleure expérience possible à l'utilisateur**. Cela passe par un travail d'UX design et de conception au préalable, mais également d'optimisations invisibles du HTML qui permettent un meilleur accès au contenu, quelles que soient les conditions de lecture de la page (débit internet faible, utilisation d'un lecteur d'écran, etc.). 
 
 Nous avons développé Accesseo afin de pouvoir, au moment du développement, avoir un oeil sur ces optimisations et les mettre en place, tout en impactant le moins possible le temps passé à faire ces ajustements. 
 - ⚡️ [Voir Accesseo sur Packagist](https://packagist.org/packages/elao/accesseo) ⚡️
