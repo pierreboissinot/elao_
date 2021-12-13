@@ -5,7 +5,7 @@
         <description>Découvrez nos articles techniques (ou non), rédigés par les membres de l'équipe d'Elao !</description>
         <copyright>Elao - L’utilisation des flux RSS de elao.com est réservée à un usage strictement personnel, non professionnel et non collectif. Toute autre exploitation doit faire l’objet d’une autorisation et donner lieu au versement d’une rémunération. Contact : contact@elao.com</copyright>
         <link>https://elao.github.io/elao_/pr/436/blog</link>
-        <pubDate>Wed, 24 Nov 2021 14:18:24 +0000</pubDate>
+        <pubDate>Mon, 13 Dec 2021 10:40:41 +0000</pubDate>
         <language>fr</language>
         <image>
             <url>https://elao.github.io/elao_/pr/436/apple-touch-icon.png</url>
@@ -120,36 +120,5 @@
                             <category>conference</category>
                             <category>afupday</category>
                                 </item>
-                <item>
-            <title>AFUP Day 2021, jour 1 : le compte-rendu de l&#039;équipe</title>
-            <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
-            <description>
-                <![CDATA[ Notre compte-rendu du premier jour de l&#039;Afup Day, édition 2021, à distance ! ]]>
-            </description>
-            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/afup-day-1-2021</guid>
-            <link>https://elao.github.io/elao_/pr/436/blog/elao/afup-day-1-2021</link>
-            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/2021/afup-day-2021/afup-day-2021.png/951d7b907ffee359028f2348efb15d70.png" width="1200" height="627">
-                <media:description type="plain">AFUP Day 2021, jour 1 : le compte-rendu de l&#039;équipe</media:description>
-                            </media:content>
-                            <category>developpement</category>
-                            <category>afup</category>
-                            <category>conference</category>
-                            <category>afupday</category>
-                                </item>
-                <item>
-            <title>MiXiT 2021, une conférence 100 % en ligne: retour d&#039;expérience côté organisation</title>
-            <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-            <description>
-                <![CDATA[ Comme la plupart des conférences tech, cette année, l&#039;édition de MiXiT 2021 a eu lieu à distance. Alors, comment ça s&#039;est passé côté orga ? ]]>
-            </description>
-            <guid isPermaLink="true">https://elao.github.io/elao_/pr/436/blog/elao/rex-orga-mixit-2021</guid>
-            <link>https://elao.github.io/elao_/pr/436/blog/elao/rex-orga-mixit-2021</link>
-            <media:content url="https://elao.github.io/elao_/pr/436/resized/images/posts/2021/mixit/mixit-2021.png/45b91cc4e16bf18c56d27b64e513f342.png" width="1200" height="627">
-                <media:description type="plain">MiXiT 2021, une conférence 100 % en ligne: retour d&#039;expérience côté organisation</media:description>
-                            </media:content>
-                            <category>conference</category>
-                            <category>mixit</category>
-                                        <comments>https://twitter.com/Elao/status/1397886962527309826</comments>
-                    </item>
             </channel>
 </rss>
