@@ -2,7 +2,7 @@
 name: "Accesseo"
 title:
 - "Bundle Symfony Accesseo"
-- "améliorez l'accessibilité de vos pages"
+- "Améliorez l'accessibilité de vos pages"
 titleSeo: "Accessibilité et SEO de vos pages Symfony avec Accesseo"
 metaDescription : ""
 articles:
