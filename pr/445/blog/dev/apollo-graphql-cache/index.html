@@ -361,14 +361,14 @@
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="b126761a2d2637e8e882402fa056d923"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">ApolloClient</span></span> <span class="token keyword module">from</span> <span class="token string">'apollo-boost'</span>
 
 <span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ApolloClient</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  uri<span class="token operator">:</span> <span class="token string">'https://graphql.example.com'</span>
+  <span class="token literal-property property">uri</span><span class="token operator">:</span> <span class="token string">'https://graphql.example.com'</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <p>Et c'est parti, on peut lancer nos requêtes GraphQL :</p>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="e0bd0a297085019d626babffa541bad1"><span class="token keyword module">import</span> <span class="token imports">gql</span> <span class="token keyword module">from</span> <span class="token string">'graphql-tag'</span>
 
 client
   <span class="token punctuation">.</span><span class="token method function property-access">query</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    query<span class="token operator">:</span> gql<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token graphql language-graphql">
+    <span class="token literal-property property">query</span><span class="token operator">:</span> gql<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token graphql language-graphql">
       <span class="token keyword">query</span> <span class="token definition-query function">Todos</span> <span class="token punctuation">{</span>
         <span class="token object">todos</span> <span class="token punctuation">{</span>
           <span class="token property">id</span>
@@ -387,7 +387,7 @@ client
 
 client
   <span class="token punctuation">.</span><span class="token method function property-access">mutate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    mutation<span class="token operator">:</span> gql<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token graphql language-graphql">
+    <span class="token literal-property property">mutation</span><span class="token operator">:</span> gql<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token graphql language-graphql">
       <span class="token keyword">mutation</span> <span class="token definition-mutation function">AddTodo</span><span class="token punctuation">(</span><span class="token variable variable-input">$text</span><span class="token punctuation">:</span> <span class="token scalar">String</span><span class="token operator">!</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token property-query property-mutation">addTodo</span><span class="token punctuation">(</span><span class="token attr-name">text</span><span class="token punctuation">:</span> <span class="token variable variable-input">$text</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
           <span class="token property">id</span>
@@ -395,8 +395,8 @@ client
         <span class="token punctuation">}</span>
       <span class="token punctuation">}</span>
     </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
-    variables<span class="token operator">:</span> <span class="token punctuation">{</span>
-      text<span class="token operator">:</span> <span class="token string">'Foobar'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">variables</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'Foobar'</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span>
   <span class="token punctuation">.</span><span class="token method function property-access">then</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token arrow operator">=&gt;</span> <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -421,11 +421,11 @@ client
 </span><span class="token template-punctuation string">`</span></span>
 
 <span class="token keyword">const</span> data <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token method function property-access">readQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  query<span class="token operator">:</span> <span class="token constant">TODOS</span>
+  <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token constant">TODOS</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <p>Nous pouvons modifier ces données puis utiliser la méthode <code class="code-inline" id="487ef08341270e780f4c1f508fdb096a">writeQuery</code> pour les insérer dans le cache :</p>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="4b3685594bee6a23a72ec81ed8e865e6">client<span class="token punctuation">.</span><span class="token method function property-access">writeQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  query<span class="token operator">:</span> <span class="token constant">TODOS</span>
+  <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token constant">TODOS</span>
   data
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <p>En combinant l'utilisation de ce deux méthodes dans l'<code class="code-inline" id="3ac340832f29c11538fbe2d6f75e8bcc">update</code> de la mutation, nous pouvons ainsi mettre à jour notre cache :</p>
@@ -441,20 +441,20 @@ client
 
 client
   <span class="token punctuation">.</span><span class="token method function property-access">mutate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    mutation<span class="token operator">:</span> <span class="token constant">ADD_TODO</span><span class="token punctuation">,</span>
-    variables<span class="token operator">:</span> <span class="token punctuation">{</span>
-      text<span class="token operator">:</span> <span class="token string">'Foobar'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">mutation</span><span class="token operator">:</span> <span class="token constant">ADD_TODO</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">variables</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'Foobar'</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function-variable function">update</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">cache<span class="token punctuation">,</span> <span class="token punctuation">{</span> data<span class="token operator">:</span> <span class="token maybe-class-name">AddTodo</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">update</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">cache<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token maybe-class-name">AddTodo</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
       <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token maybe-class-name">Todos</span> <span class="token punctuation">}</span> <span class="token operator">=</span> cache<span class="token punctuation">.</span><span class="token method function property-access">readQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        query<span class="token operator">:</span> <span class="token constant">TODOS</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token constant">TODOS</span><span class="token punctuation">,</span>
       <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
       <span class="token keyword">const</span> <span class="token maybe-class-name">NewTodos</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token spread operator">...</span><span class="token maybe-class-name">Todos</span><span class="token punctuation">,</span> <span class="token maybe-class-name">AddTodo</span><span class="token punctuation">]</span>
 
       cache<span class="token punctuation">.</span><span class="token method function property-access">writeQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        query<span class="token operator">:</span> <span class="token constant">TODOS</span><span class="token punctuation">,</span>
-        data<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token maybe-class-name">Todos</span><span class="token operator">:</span> <span class="token maybe-class-name">NewTodos</span> <span class="token punctuation">}</span>
+        <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token constant">TODOS</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">Todos</span><span class="token operator">:</span> <span class="token maybe-class-name">NewTodos</span> <span class="token punctuation">}</span>
       <span class="token punctuation">}</span><span class="token punctuation">)</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
@@ -488,13 +488,13 @@ client
 </span><span class="token template-punctuation string">`</span></span>
 
 <span class="token keyword">const</span> todo <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token method function property-access">readFragment</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// identifiant de l'objet</span>
-  fragment<span class="token operator">:</span> <span class="token maybe-class-name">TodoFields</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// identifiant de l'objet</span>
+  <span class="token literal-property property">fragment</span><span class="token operator">:</span> <span class="token maybe-class-name">TodoFields</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="60b2f1fc0df54762aa0fbd7741bc07b0">client<span class="token punctuation">.</span><span class="token method function property-access">writeFragment</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// identifiant de l'objet</span>
-  fragment<span class="token operator">:</span> <span class="token maybe-class-name">TodoFields</span>
-  data<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token spread operator">...</span>todo<span class="token punctuation">,</span> completed<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token comment">// identifiant de l'objet</span>
+  <span class="token literal-property property">fragment</span><span class="token operator">:</span> <span class="token maybe-class-name">TodoFields</span>
+  <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token spread operator">...</span>todo<span class="token punctuation">,</span> <span class="token literal-property property">completed</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <h2 id="mise-a-jour-automatique" class="anchor-title"><a href="#mise-a-jour-automatique">Mise à jour automatique</a></h2>
 <p>Heureusement, il n'est pas toujours obligatoire de mettre manuellement à jour le cache comme ci-dessus. Il y a certains cas où le cache est automatiquement mis à jour par Apollo.</p>
@@ -563,10 +563,10 @@ client
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="395d3fcfc81c38e4d143ad0342829c32"><span class="token keyword module">import</span> <span class="token imports"><span class="token punctuation">{</span> <span class="token maybe-class-name">InMemoryCache</span> <span class="token punctuation">}</span></span> <span class="token keyword module">from</span> <span class="token string">'apollo-cache-inmemory'</span>
 
 <span class="token keyword">const</span> cache <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">InMemoryCache</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  cacheRedirects<span class="token operator">:</span> <span class="token punctuation">{</span>
-    <span class="token maybe-class-name">Query</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">cacheRedirects</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">Query</span><span class="token operator">:</span> <span class="token punctuation">{</span>
       <span class="token function-variable function"><span class="token maybe-class-name">Todo</span></span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">_<span class="token punctuation">,</span> args<span class="token punctuation">,</span> <span class="token punctuation">{</span> getCacheKey <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span>
-        <span class="token function">getCacheKey</span><span class="token punctuation">(</span><span class="token punctuation">{</span> __typename<span class="token operator">:</span> <span class="token string">'Todo'</span><span class="token punctuation">,</span> id<span class="token operator">:</span> args<span class="token punctuation">.</span><span class="token property-access">id</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token function">getCacheKey</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">__typename</span><span class="token operator">:</span> <span class="token string">'Todo'</span><span class="token punctuation">,</span> <span class="token literal-property property">id</span><span class="token operator">:</span> args<span class="token punctuation">.</span><span class="token property-access">id</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
@@ -583,25 +583,25 @@ client
 
 client
   <span class="token punctuation">.</span><span class="token method function property-access">mutate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    mutation<span class="token operator">:</span> <span class="token constant">REMOVE_TODO</span><span class="token punctuation">,</span>
-    variables<span class="token operator">:</span> <span class="token punctuation">{</span>
-      id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">mutation</span><span class="token operator">:</span> <span class="token constant">REMOVE_TODO</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">variables</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function-variable function">update</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">cache<span class="token punctuation">,</span> <span class="token punctuation">{</span> data<span class="token operator">:</span> <span class="token maybe-class-name">RemoveTodo</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">update</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">cache<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token maybe-class-name">RemoveTodo</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
       <span class="token comment">// Mise à jour du cache de la requête TODOS</span>
-      <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token maybe-class-name">Todos</span> <span class="token punctuation">}</span> <span class="token operator">=</span> cache<span class="token punctuation">.</span><span class="token method function property-access">readQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span> query<span class="token operator">:</span> <span class="token constant">TODOS</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token maybe-class-name">Todos</span> <span class="token punctuation">}</span> <span class="token operator">=</span> cache<span class="token punctuation">.</span><span class="token method function property-access">readQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token constant">TODOS</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
       <span class="token keyword">const</span> <span class="token maybe-class-name">NewTodos</span> <span class="token operator">=</span> <span class="token maybe-class-name">Todos</span><span class="token punctuation">.</span><span class="token method function property-access">filter</span><span class="token punctuation">(</span><span class="token parameter">todo</span> <span class="token arrow operator">=&gt;</span> todo<span class="token punctuation">.</span><span class="token property-access">id</span> <span class="token operator">!==</span> <span class="token maybe-class-name">RemoveTodo</span><span class="token punctuation">.</span><span class="token property-access">id</span><span class="token punctuation">)</span>
 
       cache<span class="token punctuation">.</span><span class="token method function property-access">writeQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        query<span class="token operator">:</span> <span class="token constant">TODOS</span><span class="token punctuation">,</span>
-        data<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token maybe-class-name">Todos</span><span class="token operator">:</span> <span class="token maybe-class-name">NewTodos</span> <span class="token punctuation">}</span>
+        <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token constant">TODOS</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">Todos</span><span class="token operator">:</span> <span class="token maybe-class-name">NewTodos</span> <span class="token punctuation">}</span>
       <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
       <span class="token comment">// Mise à jour du cache de la requête TODO(3)</span>
       cache<span class="token punctuation">.</span><span class="token method function property-access">writeQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        query<span class="token operator">:</span> <span class="token constant">TODO</span><span class="token punctuation">,</span>
-        variables<span class="token operator">:</span> <span class="token punctuation">{</span> id<span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        data<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token maybe-class-name">Todo</span><span class="token operator">:</span> <span class="token keyword null nil">null</span> <span class="token punctuation">}</span>
+        <span class="token literal-property property">query</span><span class="token operator">:</span> <span class="token constant">TODO</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">variables</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">Todo</span><span class="token operator">:</span> <span class="token keyword null nil">null</span> <span class="token punctuation">}</span>
       <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
     <span class="token punctuation">}</span>
@@ -656,8 +656,8 @@ client
 <p>Ainsi, pour vous simplement appeler la méthode <code class="code-inline" id="52a6a5acdd1c6a1a48c21bcf6eeb124a">cache.delete(entry)</code> dans l'<code class="code-inline" id="3ac340832f29c11538fbe2d6f75e8bcc">update</code> de votre mutation pour supprimer totalement l'objet du cache.</p>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="c3c8e592b9d55eb0f2c53aa101b4831b">client
   <span class="token punctuation">.</span><span class="token method function property-access">mutate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    mutation<span class="token operator">:</span> <span class="token constant">REMOVE_TODO</span><span class="token punctuation">,</span>
-    variables<span class="token operator">:</span> <span class="token punctuation">{</span> id<span class="token operator">:</span> todo<span class="token punctuation">.</span><span class="token property-access">id</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">mutation</span><span class="token operator">:</span> <span class="token constant">REMOVE_TODO</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">variables</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> todo<span class="token punctuation">.</span><span class="token property-access">id</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token function-variable function">update</span><span class="token operator">:</span> <span class="token parameter">cache</span> <span class="token arrow operator">=&gt;</span> cache<span class="token punctuation">.</span><span class="token method function property-access">delete</span><span class="token punctuation">(</span>todo<span class="token punctuation">)</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <h2 id="fetch-policy" class="anchor-title"><a href="#fetch-policy">Fetch policy</a></h2>
@@ -680,7 +680,7 @@ client
 
 <span class="token function">persistCache</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   cache<span class="token punctuation">,</span>
-  storage<span class="token operator">:</span> <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token property-access">localStorage</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">storage</span><span class="token operator">:</span> <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token property-access">localStorage</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
 <span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ApolloClient</span><span class="token punctuation">(</span><span class="token punctuation">{</span>

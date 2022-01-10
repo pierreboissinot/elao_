@@ -348,7 +348,7 @@ module<span class="token punctuation">.</span><span class="token property-access
 {% endverbatim %}</code></pre>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="5b6c4102eddf71c77f8f280e5df150e2"><span class="token keyword module">import</span> <span class="token imports"><span class="token maybe-class-name">Vue</span></span> <span class="token keyword module">from</span> <span class="token string">'vue'</span>
 
-<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span> el<span class="token operator">:</span> <span class="token string">'#app'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">'#app'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 <p>Si vous utilisez des composants, vous pouvez soit utiliser des templates inlines :</p>
 <pre class="code-multiline language-html"><code class="language-html" id="2614a92703b15cd98d0d9618a2376434"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mon-composant</span> <span class="token attr-name">inline-template</span><span class="token punctuation">&gt;</span></span>
@@ -359,13 +359,13 @@ module<span class="token punctuation">.</span><span class="token property-access
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="b0589ef2868e43036bba177e51186a82"><span class="token keyword">const</span> <span class="token maybe-class-name">MonComposant</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span> foobar<span class="token operator">:</span> <span class="token string">'Foobar'</span> <span class="token punctuation">}</span>
+    <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">foobar</span><span class="token operator">:</span> <span class="token string">'Foobar'</span> <span class="token punctuation">}</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
-  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token maybe-class-name">MonComposant</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
@@ -380,15 +380,15 @@ module<span class="token punctuation">.</span><span class="token property-access
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="26c8f442f9bc57a404a2afd75557cf56"><span class="token keyword">const</span> <span class="token maybe-class-name">MonComposant</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-  template<span class="token operator">:</span> <span class="token string">'#mon-composant-template'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">template</span><span class="token operator">:</span> <span class="token string">'#mon-composant-template'</span><span class="token punctuation">,</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span> foobar<span class="token operator">:</span> <span class="token string">'Foobar'</span> <span class="token punctuation">}</span>
+    <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">foobar</span><span class="token operator">:</span> <span class="token string">'Foobar'</span> <span class="token punctuation">}</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
-  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token maybe-class-name">MonComposant</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
@@ -408,25 +408,25 @@ module<span class="token punctuation">.</span><span class="token property-access
 {{ form_end(form) }}
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <pre class="code-multiline language-javascript"><code class="language-javascript" id="7e5f7c580fb25a93e6b2d3890c56a658"><span class="token keyword">const</span> <span class="token maybe-class-name">MyCounter</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-  props<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'content'</span><span class="token punctuation">,</span> <span class="token string">'max'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'content'</span><span class="token punctuation">,</span> <span class="token string">'max'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span>
-      content<span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">contentLength</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">content</span><span class="token punctuation">.</span><span class="token property-access">length</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    hasError<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">hasError</span><span class="token operator">:</span> <span class="token punctuation">{</span>
       <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">content</span><span class="token punctuation">.</span><span class="token property-access">length</span> <span class="token operator">&gt;</span> max
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
-  <span class="token maybe-class-name">MyCounter</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">MyCounter</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token maybe-class-name">MyCounter</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
@@ -497,7 +497,7 @@ module<span class="token punctuation">.</span><span class="token property-access
   <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
     <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span>
-        greeting<span class="token operator">:</span> <span class="token string">"Hello world"</span>
+        <span class="token literal-property property">greeting</span><span class="token operator">:</span> <span class="token string">"Hello world"</span>
       <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span><span class="token punctuation">;</span>
@@ -511,7 +511,7 @@ module<span class="token punctuation">.</span><span class="token property-access
   <span class="token keyword module">import</span> <span class="token maybe-class-name">Greeting</span> <span class="token string">'./Greeting.vue'</span>
 
   <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
-    components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">components</span><span class="token operator">:</span> <span class="token punctuation">{</span>
       <span class="token maybe-class-name">Greeting</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span>
@@ -545,7 +545,7 @@ module<span class="token punctuation">.</span><span class="token property-access
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
   <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
-    props<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span>
+    <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span>
   <span class="token punctuation">}</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
 <p><code class="code-inline" id="3f825e3143e8899f28ab2a08f449f9f6">assets/app.js</code></p>
@@ -555,8 +555,8 @@ module<span class="token punctuation">.</span><span class="token property-access
 <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword control-flow">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token maybe-class-name">App</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-      props<span class="token operator">:</span> <span class="token punctuation">{</span>
-        name<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">$el</span><span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-name'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">$el</span><span class="token punctuation">.</span><span class="token method function property-access">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-name'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
       <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>

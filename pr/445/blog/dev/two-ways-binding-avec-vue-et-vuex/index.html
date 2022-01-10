@@ -297,7 +297,7 @@
 <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span>
-      foobar<span class="token operator">:</span> <span class="token string">'Lorem ipsum'</span>
+      <span class="token literal-property property">foobar</span><span class="token operator">:</span> <span class="token string">'Lorem ipsum'</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
@@ -319,8 +319,8 @@
 <p>La solution pour faire du Two-Way Binding est donc d'utiliser un computed avec un getter et un setter. Le getter renvoie la valeur stockée dans le store et le setter met à jour le store grâce à une mutation.</p>
 <pre class="code-multiline language-html"><code class="language-html" id="98ed0fb82a15daf43632e56ca22e1b32"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
 <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
-  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
-    foobar<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">foobar</span><span class="token operator">:</span> <span class="token punctuation">{</span>
       <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">$store</span><span class="token punctuation">.</span><span class="token property-access">state</span><span class="token punctuation">.</span><span class="token property-access">foobar</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
       <span class="token function">set</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">$store</span><span class="token punctuation">.</span><span class="token method function property-access">commit</span><span class="token punctuation">(</span><span class="token string">'UPDATE_FOOBAR'</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
@@ -339,7 +339,7 @@
 <p>Par exemple :</p>
 <pre class="code-multiline language-html"><code class="language-html" id="36428d8c65b77e03c231a648957169f8"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
 <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
-  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token spread operator">...</span><span class="token method function property-access">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'foobar'</span><span class="token punctuation">,</span> <span class="token string">'barfoo'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
@@ -347,7 +347,7 @@
 <p>Permet d'obtenir le même résultat que :</p>
 <pre class="code-multiline language-html"><code class="language-html" id="e7f1b87671584c45777912fd3e7ff328"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
 <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
-  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">foobar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword control-flow">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">$store</span><span class="token punctuation">.</span><span class="token property-access">state</span><span class="token punctuation">.</span><span class="token property-access">foobar</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -377,7 +377,7 @@
 <p>Vous pouvez désormais utiliser cette fonction avec le <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Syntaxe_d%C3%A9composition" target="_blank">spread operator</a> pour générer vos computed properties.</p>
 <pre class="code-multiline language-html"><code class="language-html" id="10da1960e3dd5f74d021b36aeb610ab3"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
 <span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
-  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">computed</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token spread operator">...</span><span class="token method function property-access">mapFields</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'foobar'</span><span class="token punctuation">,</span> <span class="token string">'barfoo'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
@@ -391,11 +391,11 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></code></pre>
 <p>Ici, cela nécessite évidemment que vous disposiez des mutations pour chacune de vos variables nommées de la même façon (<code class="code-inline" id="277b85a1bf0deb91fba91f3f5a9fc664">UPDATE_FOOBAR</code> et <code class="code-inline" id="db06a11579f865e3288db6eeb8a3dd9f">UPDATE_BARFOO</code>).</p>
 <pre class="code-multiline language-js"><code class="language-js" id="2f0916608f1913a2e6b45d15a3d82947"><span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  state<span class="token operator">:</span> <span class="token punctuation">{</span>
-    foobar<span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">,</span>
-    barfoo<span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">state</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">foobar</span><span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">barfoo</span><span class="token operator">:</span> <span class="token keyword null nil">null</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  mutation<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">mutation</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token constant">UPDATE_FOOBAR</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> state<span class="token punctuation">.</span><span class="token property-access">foobar</span> <span class="token operator">=</span> value <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token constant">UPDATE_BARFOO</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> state<span class="token punctuation">.</span><span class="token property-access">barfoo</span> <span class="token operator">=</span> value <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span>
@@ -414,7 +414,7 @@
 <span class="token punctuation">}</span></code></pre>
 <p>Cette fonction permet de créer un watcher qui émettra un événement à la modification pour chaque propriété passée en argument.</p>
 <pre class="code-multiline language-js"><code class="language-js" id="02da82502182bd5165d1a8cf84478118"><span class="token keyword module">export</span> <span class="token keyword module">default</span> <span class="token punctuation">{</span>
-  watch<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token spread operator">...</span><span class="token method function property-access">mapWatcher</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'foobar'</span><span class="token punctuation">,</span> <span class="token string">'barfoo'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></body>
