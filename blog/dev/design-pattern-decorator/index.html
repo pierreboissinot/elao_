@@ -364,12 +364,12 @@
 
     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token keyword type-hint">array</span> <span class="token variable">$replacements</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">replacements</span> <span class="token operator">=</span> <span class="token variable">$replacements</span><span class="token punctuation">;</span>
+        <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">replacements</span> <span class="token operator">=</span> <span class="token variable">$replacements</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">moderate</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$text</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">string</span>
     <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token function">strtr</span><span class="token punctuation">(</span><span class="token variable">$text</span><span class="token punctuation">,</span> <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">replacements</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">strtr</span><span class="token punctuation">(</span><span class="token variable">$text</span><span class="token punctuation">,</span> <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">replacements</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></span></code></pre>
 <p>Exemple d'utilisation :</p>
@@ -397,7 +397,7 @@
 
     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token class-name type-declaration">ModeratorInterface</span> <span class="token variable">$baseModerator</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">decorated</span> <span class="token operator">=</span> <span class="token variable">$baseModerator</span><span class="token punctuation">;</span>
+        <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">decorated</span> <span class="token operator">=</span> <span class="token variable">$baseModerator</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">moderate</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$text</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">string</span>
@@ -405,7 +405,7 @@
         <span class="token keyword">return</span> <span class="token function">preg_replace</span><span class="token punctuation">(</span>
             <span class="token scope"><span class="token keyword">self</span><span class="token punctuation">::</span></span><span class="token variable">$phonePattern</span><span class="token punctuation">,</span>
             <span class="token string single-quoted-string">'**********'</span><span class="token punctuation">,</span>
-            <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">decorated</span><span class="token operator">-&gt;</span><span class="token function">moderate</span><span class="token punctuation">(</span><span class="token variable">$text</span><span class="token punctuation">)</span>
+            <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">decorated</span><span class="token operator">-&gt;</span><span class="token function">moderate</span><span class="token punctuation">(</span><span class="token variable">$text</span><span class="token punctuation">)</span>
         <span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></span></code></pre>
@@ -565,7 +565,7 @@
             </div>
         </section>
         <section class="footer__legals">
-            <span>© 2005 - 2021 - ELAO - Tous droits réservés</span>
+            <span>© 2005 - 2022 - ELAO - Tous droits réservés</span>
             <a href="/elao_/legal">Mentions légales</a>
             <a href="/elao_/confidentialite">Protection des données</a>
             <a id="see" href="#ssss">🐍</a>

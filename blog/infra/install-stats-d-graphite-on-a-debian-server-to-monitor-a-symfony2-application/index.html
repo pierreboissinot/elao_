@@ -384,14 +384,14 @@ python manage.py syncdb
 
 <span class="token comment"># Don't forget to go to the location you want to install node in (like cd /home/) before running these commands</span>
 <span class="token function">git</span> clone https://github.com/joyent/node.git
-<span class="token builtin class-name">cd</span> node
+<span class="token builtin class-name">cd</span> <span class="token function">node</span>
 <span class="token function">git</span> checkout v0.8.12
 
 ./configure --openssl-libpath<span class="token operator">=</span>/usr/lib/ssl
 <span class="token function">make</span>
 <span class="token function">make</span> <span class="token builtin class-name">test</span>
 <span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
-node -v
+<span class="token function">node</span> -v
 <span class="token function">npm</span> -v
 
 <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
@@ -400,13 +400,13 @@ node -v
 <span class="token function">cp</span> exampleConfig.js local.js</code></pre>
 <h2 id="edit-local-js-and-make-it-looks-like" class="anchor-title"><a href="#edit-local-js-and-make-it-looks-like">Edit local.js and make it looks like:</a></h2>
 <pre class="code-multiline language-js"><code class="language-js" id="5b53ab50a103135ec0928dab1ed72acd"><span class="token punctuation">{</span>
-graphitePort<span class="token operator">:</span> <span class="token number">2003</span>
-<span class="token punctuation">,</span> graphiteHost<span class="token operator">:</span> <span class="token string">"localhost"</span>
-<span class="token punctuation">,</span> port<span class="token operator">:</span> <span class="token number">8125</span>
+<span class="token literal-property property">graphitePort</span><span class="token operator">:</span> <span class="token number">2003</span>
+<span class="token punctuation">,</span> <span class="token literal-property property">graphiteHost</span><span class="token operator">:</span> <span class="token string">"localhost"</span>
+<span class="token punctuation">,</span> <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">8125</span>
 <span class="token punctuation">}</span></code></pre>
 <h1 id="then-you-need-to-run-stats-d" class="anchor-title"><a href="#then-you-need-to-run-stats-d">Then you need to run stats.d</a></h1>
 <pre class="code-multiline language-bash"><code class="language-bash" id="6bd9c0dfaed0ccd1221f4f4d55e6d9fa"><span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">screen</span>
-<span class="token function">screen</span> node stats.js local.js
+<span class="token function">screen</span> <span class="token function">node</span> stats.js local.js
 
 <span class="token comment"># Then press Ctrl + a + d in order to let run stats.js in background mode thanks to screen.</span></code></pre>
 <p>If you want the full detail, check out the <a href="http://sekati.com/etc/install-nodejs-on-debian-squeeze" target="_blank">source</a>.</p>
@@ -578,7 +578,7 @@ graphitePort<span class="token operator">:</span> <span class="token number">200
             </div>
         </section>
         <section class="footer__legals">
-            <span>© 2005 - 2021 - ELAO - Tous droits réservés</span>
+            <span>© 2005 - 2022 - ELAO - Tous droits réservés</span>
             <a href="/elao_/legal">Mentions légales</a>
             <a href="/elao_/confidentialite">Protection des données</a>
             <a id="see" href="#ssss">🐍</a>

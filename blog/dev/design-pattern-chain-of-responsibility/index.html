@@ -441,7 +441,7 @@
      */</span>
     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token class-name type-declaration">AbstractProductExtractor</span> <span class="token variable">$nextHandler</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span> <span class="token operator">=</span> <span class="token variable">$nextHandler</span><span class="token punctuation">;</span>
+        <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span> <span class="token operator">=</span> <span class="token variable">$nextHandler</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token doc-comment comment">/**
@@ -454,12 +454,12 @@
      */</span>
     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">setNextHandler</span><span class="token punctuation">(</span><span class="token class-name type-declaration">AbstractProductExtractor</span> <span class="token variable">$nextHandler</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">null</span> <span class="token operator">===</span> <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span> <span class="token punctuation">{</span>
-            <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span> <span class="token operator">=</span> <span class="token variable">$nextHandler</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">null</span> <span class="token operator">===</span> <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span> <span class="token punctuation">{</span>
+            <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span> <span class="token operator">=</span> <span class="token variable">$nextHandler</span><span class="token punctuation">;</span>
             <span class="token keyword">return</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
-        <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span><span class="token operator">-&gt;</span><span class="token function">setNextHandler</span><span class="token punctuation">(</span><span class="token variable">$nextHandler</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span><span class="token operator">-&gt;</span><span class="token function">setNextHandler</span><span class="token punctuation">(</span><span class="token variable">$nextHandler</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token doc-comment comment">/**
@@ -475,16 +475,16 @@
      */</span>
     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">extractProducts</span><span class="token punctuation">(</span><span class="token class-name class-name-fully-qualified type-declaration"><span class="token punctuation">\</span>SplFileObject</span> <span class="token variable">$file</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token function">support</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token function">handle</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token function">support</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token function">handle</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">null</span> <span class="token operator">!==</span> <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">null</span> <span class="token operator">!==</span> <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token comment">// !!! Do not do the following:</span>
             <span class="token comment">// return $this-&gt;handle($file)</span>
             <span class="token comment">// Indeed, you must re-enter the current method in order to make sure that the</span>
             <span class="token comment">// handler supports the $file passed as an argument.</span>
-            <span class="token keyword">return</span> <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span><span class="token operator">-&gt;</span><span class="token function">extractProducts</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token property">nextHandler</span><span class="token operator">-&gt;</span><span class="token function">extractProducts</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
 
         <span class="token comment">// Here, you must throw an exception if you want to make sure that the request is handled</span>
@@ -507,7 +507,7 @@
         <span class="token keyword">echo</span> <span class="token scope"><span class="token keyword">static</span><span class="token punctuation">::</span></span><span class="token keyword">CLASS</span><span class="token operator">.</span><span class="token string double-quoted-string">" is the handler for <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$file</span><span class="token operator">-&gt;</span><span class="token function">getExtension</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span> files\n"</span><span class="token punctuation">;</span>
         <span class="token variable">$content</span> <span class="token operator">=</span> <span class="token function">file_get_contents</span><span class="token punctuation">(</span><span class="token variable">$file</span><span class="token operator">-&gt;</span><span class="token function">getRealPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">return</span> <span class="token this">$this</span><span class="token operator">-&gt;</span><span class="token function">parseContent</span><span class="token punctuation">(</span><span class="token variable">$content</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token this keyword">$this</span><span class="token operator">-&gt;</span><span class="token function">parseContent</span><span class="token punctuation">(</span><span class="token variable">$content</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
     <span class="token keyword">abstract</span> <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function-definition function">support</span><span class="token punctuation">(</span><span class="token class-name type-declaration">SplFileObject</span> <span class="token variable">$file</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">bool</span><span class="token punctuation">;</span>
@@ -689,7 +689,7 @@
             </div>
         </section>
         <section class="footer__legals">
-            <span>© 2005 - 2021 - ELAO - Tous droits réservés</span>
+            <span>© 2005 - 2022 - ELAO - Tous droits réservés</span>
             <a href="/elao_/legal">Mentions légales</a>
             <a href="/elao_/confidentialite">Protection des données</a>
             <a id="see" href="#ssss">🐍</a>
