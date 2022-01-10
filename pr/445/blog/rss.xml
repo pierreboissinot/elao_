@@ -5,7 +5,7 @@
         <description>Découvrez nos articles techniques (ou non), rédigés par les membres de l'équipe d'Elao !</description>
         <copyright>Elao - L’utilisation des flux RSS de elao.com est réservée à un usage strictement personnel, non professionnel et non collectif. Toute autre exploitation doit faire l’objet d’une autorisation et donner lieu au versement d’une rémunération. Contact : contact@elao.com</copyright>
         <link>https://elao.github.io/elao_/pr/445/blog</link>
-        <pubDate>Fri, 07 Jan 2022 15:54:30 +0000</pubDate>
+        <pubDate>Mon, 10 Jan 2022 09:55:45 +0000</pubDate>
         <language>fr</language>
         <image>
             <url>https://elao.github.io/elao_/pr/445/apple-touch-icon.png</url>
@@ -58,21 +58,6 @@
                             <category>elao</category>
                             <category>team</category>
                                         <comments>https://twitter.com/Elao/status/1427551760139366403</comments>
-                    </item>
-                <item>
-            <title>Anne-Laure, développeuse web chez Elao depuis 3 ans</title>
-            <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
-            <description>
-                <![CDATA[  ]]>
-            </description>
-            <guid isPermaLink="true">https://elao.github.io/elao_/pr/445/blog/elao/anne-laure-developpeuse-web-chez-elao-depuis-3-ans</guid>
-            <link>https://elao.github.io/elao_/pr/445/blog/elao/anne-laure-developpeuse-web-chez-elao-depuis-3-ans</link>
-            <media:content url="https://elao.github.io/elao_/pr/445/resized/images/posts/2021/itw-2b.jpeg/7e89183e052bd681eb2037f078390bfc.jpeg" width="1200" height="627">
-                <media:description type="plain">Anne-Laure, développeuse web chez Elao depuis 3 ans</media:description>
-                            </media:content>
-                            <category>elao</category>
-                            <category>team</category>
-                                        <comments>https://twitter.com/Elao/status/1413061065374580737</comments>
                     </item>
             </channel>
 </rss>
