@@ -5,7 +5,7 @@
         <description>Découvrez nos articles techniques (ou non), rédigés par les membres de l'équipe d'Elao !</description>
         <copyright>Elao - L’utilisation des flux RSS de elao.com est réservée à un usage strictement personnel, non professionnel et non collectif. Toute autre exploitation doit faire l’objet d’une autorisation et donner lieu au versement d’une rémunération. Contact : contact@elao.com</copyright>
         <link>https://elao.github.io/elao_/blog</link>
-        <pubDate>Fri, 28 Jan 2022 08:47:00 +0000</pubDate>
+        <pubDate>Mon, 31 Jan 2022 10:12:11 +0000</pubDate>
         <language>fr</language>
         <image>
             <url>https://elao.github.io/elao_/apple-touch-icon.png</url>
@@ -13,6 +13,20 @@
             <link>https://elao.github.io/elao_/blog</link>
         </image>
         <atom:link href="https://elao.github.io/elao_/blog/rss.xml" rel="self" type="application/rss+xml"/>
+                <item>
+            <title>Thomas, lead developpeur web chez Elao depuis 9 ans</title>
+            <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+            <description>
+                <![CDATA[ Le tout premier cycliste d&#039;Elao 🚲 ]]>
+            </description>
+            <guid isPermaLink="true">https://elao.github.io/elao_/blog/elao/thomas-developpeur-web-depuis-9-ans</guid>
+            <link>https://elao.github.io/elao_/blog/elao/thomas-developpeur-web-depuis-9-ans</link>
+            <media:content url="https://elao.github.io/elao_/resized/images/posts/2022/itw-thomas/header.jpg/b3888479d7b3779b2696b2a69393871a.jpg" width="1200" height="627">
+                <media:description type="plain">Thomas, lead developpeur web chez Elao depuis 9 ans</media:description>
+                            </media:content>
+                            <category>elao</category>
+                            <category>team</category>
+                                </item>
                 <item>
             <title>Sabrina, alternante en intégration fraîchement arrivée dans l&#039;équipe ✨</title>
             <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
