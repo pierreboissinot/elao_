@@ -461,30 +461,25 @@ module<span class="token punctuation">.</span><span class="token property-access
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
 <p>Très pratique pour ajouter une petite touche de <strong>Vue.js</strong> par endroit, je ne recommande pas ces méthodes pour créer une application complexe.</p>
-<div style="border-left: 5px solid #00a6ff;padding: 20px;margin: 20px 0;">
-  Si vous souhaitez tout de même changer les délimiteurs, sur une instance de Vue :
-
-  ```javascript
-  new Vue({
-    delimiters: ['${', '}']
-  })
-  ```
-
-  ou globalement pour toutes les instances de Vue :
-
-  ```javascript
-  Vue.config.delimiters = ['${', '}'];
-  ```
-
-  Vous pourrez ainsi utiliser conjointement les deux moteurs de templates :
-
-  ```html
-  <h1 id="variable-twig" class="anchor-title"><a href="#variable-twig">{{ variable_twig }}</a></h1>
-  <p>${ variable_vue }</p><p>
-  ```
-</p></div>
-<div style="border-left: 5px solid #ffa600;padding: 20px;margin: 20px 0;">
-    Attention néanmoins, le changement de délimiteurs de façon globale peut vous couper des composants tiers que vous pourriez installer et qui embarqueraient leur template avec les anciens délimiteurs.
+<div class="admonition info">
+<p>
+    Si vous souhaitez tout de même changer les délimiteurs, sur une instance de Vue :
+</p>
+</div>
+<pre class="code-multiline language-javascript"><code class="language-javascript" id="77ed978b11bd8e50509ab52a0b612856"><span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">delimiters</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'${'</span><span class="token punctuation">,</span> <span class="token string">'}'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>ou globalement pour toutes les instances de Vue :</p>
+<pre class="code-multiline language-javascript"><code class="language-javascript" id="40fc30950fa50292418440456e4c7b5f"><span class="token maybe-class-name">Vue</span><span class="token punctuation">.</span><span class="token property-access">config</span><span class="token punctuation">.</span><span class="token property-access">delimiters</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'${'</span><span class="token punctuation">,</span> <span class="token string">'}'</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+<p>Vous pourrez ainsi utiliser conjointement les deux moteurs de templates :</p>
+<pre class="code-multiline language-html"><code class="language-html" id="509d11017285d216035cca0d023b710c"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>{{ variable_twig }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>${ variable_vue }<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+<div class="admonition danger">
+<p>
+    Attention néanmoins, le changement de délimiteurs de façon globale
+    peut vous couper des composants tiers que vous pourriez installer et qui
+    embarqueraient leur template avec les anciens délimiteurs.
+</p>
 </div>
 <h3 id="single-file-component" class="anchor-title"><a href="#single-file-component">Single File Component</a></h3>
 <p>Une autre façon d'écrire vos composants est d'utiliser les <a href="https://fr.vuejs.org/v2/guide/single-file-components.html" target="_blank">composants monofichier (Single File Component)</a>. Ces fichiers <code class="code-inline" id="4d08a51ed2edf2965914aea4a2018bbd">.vue</code> contiennent à la fois le script et le template de vos composants.</p>
