@@ -5,7 +5,7 @@
         <description>Découvrez nos articles techniques (ou non), rédigés par les membres de l'équipe d'Elao !</description>
         <copyright>Elao - L’utilisation des flux RSS de elao.com est réservée à un usage strictement personnel, non professionnel et non collectif. Toute autre exploitation doit faire l’objet d’une autorisation et donner lieu au versement d’une rémunération. Contact : contact@elao.com</copyright>
         <link>https://elao.github.io/elao_/blog</link>
-        <pubDate>Tue, 15 Feb 2022 08:49:36 +0000</pubDate>
+        <pubDate>Fri, 18 Feb 2022 09:04:55 +0000</pubDate>
         <language>fr</language>
         <image>
             <url>https://elao.github.io/elao_/apple-touch-icon.png</url>
@@ -58,21 +58,6 @@
                             <category>organisation-agile</category>
                             <category>gestion-de-projet</category>
                                         <comments>https://twitter.com/Elao/status/1435891278315671554</comments>
-                    </item>
-                <item>
-            <title>Maxime, développeur web chez Elao depuis 10 ans</title>
-            <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
-            <description>
-                <![CDATA[  ]]>
-            </description>
-            <guid isPermaLink="true">https://elao.github.io/elao_/blog/elao/maxime-developpeur-web-depuis-10-ans</guid>
-            <link>https://elao.github.io/elao_/blog/elao/maxime-developpeur-web-depuis-10-ans</link>
-            <media:content url="https://elao.github.io/elao_/resized/images/posts/2021/itw-max.jpeg/9b73800543a7778167748cba2d343081.jpeg" width="1200" height="627">
-                <media:description type="plain">Maxime, développeur web chez Elao depuis 10 ans</media:description>
-                            </media:content>
-                            <category>elao</category>
-                            <category>team</category>
-                                        <comments>https://twitter.com/Elao/status/1427551760139366403</comments>
                     </item>
             </channel>
 </rss>
