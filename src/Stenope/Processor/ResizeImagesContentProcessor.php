@@ -73,6 +73,7 @@ class ResizeImagesContentProcessor implements ProcessorInterface
 
         // Ignore unsupported image formats
         if (!$this->isSupported($source)) {
+            // need to retrieve those as they are not in the public directory
             return;
         }
 
@@ -88,6 +89,7 @@ class ResizeImagesContentProcessor implements ProcessorInterface
 
     private function isSupported(string $url): bool
     {
+        $url = dirname(__DIR__, 3) . '/content/' . $url;
         try {
             $mimeType = $this->mimeTypes->guessMimeType($url);
         } catch (\InvalidArgumentException $exception) {
