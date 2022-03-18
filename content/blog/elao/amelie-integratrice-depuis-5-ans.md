@@ -2,9 +2,9 @@
 title: 'Amélie, intégratrice chez Elao depuis 5 ans'
 date: '2022-02-22' # Au format YYYY-MM-DD
 lastModified: ~ # À utiliser pour indiquer explicitement qu'un article à été mis à jour
-description: 'petite phrase sympa sur la personne'
+description: ''
 authors: [elao, adefrance] # multiple acceptés
-#tableOfContent: true # `true` pour activer ou `3` pour lister les titres sur 3 niveaux.
+tableOfContent: false
 tags: [elao, team]
 thumbnail: images/posts/thumbnails/trame-itw.jpg
 #banner: images/posts/headers/trame-itw.jpg # Uniquement si différent de la minitature (thumbnail)
@@ -12,74 +12,48 @@ thumbnail: images/posts/thumbnails/trame-itw.jpg
 #tweetId: ~ # Ajouter l'id du Tweet après publication.
 ---
 
-<!-- INTRO -->
 Aujourd'hui, on vous présente Amélie, inté chez Elao depuis 5 ans.
 
-## Ton parcours
 
 ## C'est quoi que tu préfères dans le quotidien de ton métier ?
 
-Intégrer une maquette bien pensée, qui va s'adapter comme il faut à un vrai projet avec des vraies data, où tout tombe comme ça devrait 📐
+Ce que je préfère c'est le tout début d'un projet où l'on découvre les maquettes et que l'on est complètement ébloui·e 🤩
+
+Quand tout a été bien bien pensé pour s'adapter comme il faut à un vrai projet avec des vraies data et qu'à l'intégration tout tombe droit, c'est très satisfaisant 📐
 
 ## Et ce que tu laisses volontiers aux autres ?
 
-La confection de ladite maquette.
+Le design de ces maquettes. J'aime beaucoup participer à la phase de réflexion UX mais je suis toujours impressionnée quand les wireframes deviennent des maquettes.
 
-### Qu'est-ce que tu fais quand tu ne travailles pas ?
+## Qu'est-ce que tu fais quand tu ne travailles pas ?
 
-Plein de choses ! J'ai un chat donc déjà je ramasse beaucoup d'objets cassés. Autrement je couds, je tricote (actuellement un gros gilet qui ne sera jamais fini au rythme actuel) ou je binge des séries. J'ai une très chouette île sur Animal Crossing.
+Plein de choses ! J'ai un chat donc déjà je ramasse beaucoup d'objets cassés. Autrement je sais coudre et tricoter, mais souvent je binge juste des séries 🍿
 
-## L'interview :fast-parrot: 
+## L'interview :fast-parrot:
 
 ### Tes 3 emojis préf du Slack
 
-✨ pour tout ce qui me satisfait
+Mes emojis préférés sont le `scintillement` ✨ pour tout ce qui me satisfait, la `judging hermine` :judging-hermine: en signe de désapprobation, et `ultra fast parrot` :ultra-fast-parrot: pour les émotions intenses.
 
-🔥 pour ce qui me satisfait moins
-
-:ultra_fast_parrot: pour les émotions intenses
 
 ### Les 3 trucs qui traînent toujours autour de ton bureau
 
-Mais du coup :
 - Une boule à thé
 - Un thé pas terminé parce que les petits bouts de feuille sont tombés au fond
 - Du papier et un stylo pour faire des schémas
 
-### Le projet sur lequel tu aimerais vraiment travailler
-
 ### Plutôt Slack ou call ?
 
-Slack sans hésiter. Parce que contrairement à un call, on peut dessiner ce qu'on pense.
+Je préfère Slack pour les emojis, sans hésiter ! :marioluigidance: :real-fiesta-parrot: :fire-parrot: :amelie-happy: Et puis ça permet de garder une trace écrite, de rebondir à n'importe quel moment sur ce qui a été dit.
 
-Par exemple voici mon gâteau d'anniversaire de 2021 :
-```
+Et puis globalement parce qu'à l'écrit on peut représenter plein de choses de façon très organisée.
 
-                            🔥 bougie bougie 🔥
-
-              | meringue italienne, framboises, myrtilles |
-               -------------------------------------------
-              |        truc fruité à la framboise         |
-truc vanillé  |                 génoise                   |  truc vanillé
-              |      sorte de gelée aux fruits rouges     |
-              |                 génoise                   |
-               -------------------------------------------
-
-```
-
-Et mon appartement :
-
-```
------------------------------------
-|           |        |             |
-|           |        |             |
-|           |----------------------
-------------|                      |
-|           |----------------------
-|           |
-|           |
--------------
-```
+<figure>
+    <img src="images/posts/2022/itw-amelie/ascii-cake.png" alt="gâteau d'anniversaire">
+    <figcaption>
+      <span class="figure__legend">Mon gâteau d'anniversaire</span>
+    </figcaption>
+</figure>
 
 ### Thé ou Café ?
 
@@ -87,7 +61,5 @@ Thé ou tisane 🍃 (ou verre d'eau)
 
 ### PHP ou JS ?
 
-CSS ✨
+CSS :ultra-fast-parrot:
 
-
-…
