@@ -6,7 +6,7 @@ description: ''
 authors: [elao, adefrance] # multiple acceptés
 tableOfContent: false
 tags: [elao, team]
-thumbnail: images/posts/thumbnails/trame-itw.jpg
+thumbnail: images/posts/2022/itw-amelie/banner.jpg
 #banner: images/posts/headers/trame-itw.jpg # Uniquement si différent de la minitature (thumbnail)
 #credit: { name: 'Thomas Jarrand', url: 'https://unsplash.com/@tom32i' } # Pour créditer la photo utilisée en miniature
 #tweetId: ~ # Ajouter l'id du Tweet après publication.
