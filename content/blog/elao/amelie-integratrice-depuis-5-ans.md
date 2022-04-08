@@ -23,7 +23,7 @@ Quand tout a été pensé pour s'adapter comme il faut à un vrai projet avec de
 
 ![](images/posts/2022/itw-amelie/its-true.gif)
 
-## Et ce que tu laisses volontiers aux autres ?
+## Et au contraire, qu'est ce que tu laisses volontiers aux autres ?
 
 Le design de ces maquettes. J'aime beaucoup participer à la phase de réflexion UX mais je suis toujours impressionnée quand les wireframes deviennent des maquettes.
 
