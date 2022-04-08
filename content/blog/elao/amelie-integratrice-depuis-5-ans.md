@@ -19,7 +19,9 @@ Aujourd'hui, on vous présente Amélie, inté chez Elao depuis 5 ans.
 
 Ce que je préfère c'est le tout début d'un projet où l'on découvre les maquettes et que l'on est complètement ébloui·e 🤩
 
-Quand tout a été bien bien pensé pour s'adapter comme il faut à un vrai projet avec des vraies data et qu'à l'intégration tout tombe droit, c'est très satisfaisant 📐
+Quand tout a été pensé pour s'adapter comme il faut à un vrai projet avec des vraies data et qu'à l'intégration tout tombe droit, c'est très satisfaisant 📐 C'est comme quand on fait de la couture. Pour un rendu de qualité, il faut une coupe bien faite.
+
+![](images/posts/2022/itw-amelie/its-true.gif)
 
 ## Et ce que tu laisses volontiers aux autres ?
 
